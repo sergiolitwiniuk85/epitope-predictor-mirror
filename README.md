@@ -1,5 +1,6 @@
 # epitope-predictor-mirror
 
+````
 # Epitope Predictor Mirror
 
 <p align="center">
@@ -13,28 +14,65 @@
 
 ---
 
-## 🧐 Sobre este proyecto
+## 🧐 About this Project
 
-Este repositorio sirve como un "mirror" (réplica) del proyecto **Epitope Predictor**, un modelo de lenguaje biológico ajustado para la predicción de epítopos. El modelo utiliza un adaptador de `Esm2-150M` para identificar las secuencias de aminoácidos que probablemente formen un epítopo, es decir, la parte de una molécula que es reconocida por el sistema inmunológico.
+This repository serves as a **"mirror"** (replica) of the **Epitope Predictor** project, a biological language model fine-tuned for epitope prediction. The model uses an `Esm2-150M` adapter to identify amino acid sequences likely to form an epitope—the part of a molecule recognized by the immune system.
 
-El objetivo de este repositorio es proporcionar una copia de seguridad y un acceso alternativo al modelo y los scripts asociados, asegurando que el proyecto sea accesible y fácil de replicar.
+The goal of this repository is to provide a backup and an alternative access point to the model and its associated scripts, ensuring the project is accessible and easy to replicate.
 
-## 🚀 Recursos y enlaces
+## 🚀 Resources and Links
 
-Todos los componentes principales del proyecto están disponibles en la plataforma de Hugging Face:
+All the main components of the project are available on the Hugging Face platform:
 
-- **Hugging Face Space (Demo interactiva)**: Puedes interactuar con el modelo directamente a través de la interfaz web en el siguiente enlace:
+- **Hugging Face Space (Interactive Demo)**: You can interact with the model directly through the web interface at the following link:
   - [**sergiolitwiniuk/epitope-predictor**](https://huggingface.co/spaces/sergiolitwiniuk/epitope-predictor)
 
-- **Modelo Adaptador (Adapter)**: El modelo fine-tuneado (`adapter-esm2-150M`) está alojado en el Hub de Hugging Face, desde donde puede ser descargado y utilizado en tus propios proyectos:
+- **Adapter Model**: The fine-tuned model (`adapter-esm2-150M`) is hosted on the Hugging Face Hub, where it can be downloaded and used in your own projects:
   - [**sergiolitwiniuk/adapter-esm2-150M**](https://huggingface.co/sergiolitwiniuk/adapter-esm2-150M)
 
-## 💻 Uso local
+## 💻 Local Usage
 
-Para utilizar el modelo localmente, clona este repositorio y asegúrate de tener las dependencias necesarias.
+To use the model locally, clone this repository and ensure you have the necessary dependencies.
 
-### 1. Clonar el repositorio
+### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/tu_usuario/epitope-predictor-mirror.git](https://github.com/tu_usuario/epitope-predictor-mirror.git)
+git clone [https://github.com/your_username/epitope-predictor-mirror.git](https://github.com/your_username/epitope-predictor-mirror.git)
 cd epitope-predictor-mirror
+````
+
+### 2\. (Optional) Install Dependencies
+
+If the project has a `requirements.txt` file, you can install the dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3\. Load the Model
+
+You can load the model and adapter in Python using the Hugging Face `transformers` library.
+
+```python
+from transformers import AutoModelForMaskedLM, AutoTokenizer
+from peft import PeftModel
+
+# Load the base model
+model_name = "facebook/esm2_t6_8M_UR50D"
+model = AutoModelForMaskedLM.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# Load the adapter from the repository
+adapter_model = PeftModel.from_pretrained(model, "sergiolitwiniuk/adapter-esm2-150M")
+
+# Now you can use the 'adapter_model' for inference
+```
+
+## 📜 License
+
+This project is distributed under the [**MIT License**](https://opensource.org/licenses/MIT).
+
+-----
+
+```
+```
