@@ -42,7 +42,7 @@ CSV Export: The results can also be exported in a structured format, like a CSV 
 ![Epitope Predictor csv](images/epitope_csv.png)
 
 
-## 💻 Local Usage (not recommended)
+## 💻 Local Usage (not available yet, although you can use the adapter)
 
 To use the model locally, clone this repository and ensure you have the necessary dependencies.
 
