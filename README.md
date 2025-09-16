@@ -76,6 +76,7 @@ adapter_model = PeftModel.from_pretrained(model, "sergiolitwiniuk/adapter-esm2-1
 ## 📜 License
 
 This project is distributed under the [**MIT License**](https://opensource.org/licenses/MIT).
+@sergiolitwiniuk85
 
 -----
 
