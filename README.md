@@ -31,11 +31,16 @@ All the main components of the project are available on the Hugging Face platfor
 
 Here are some screenshots of the deployed Epitope Predictor tool to demonstrate its functionality.
 
-    Main Interface: This image shows the user interface of the Hugging Face Space where you can input a protein sequence to be analyzed.
+Main Interface: This image shows the user interface of the Hugging Face Space where you can input a protein sequence to be analyzed.
+![Epitope Predictor UI](images/epitope_predictor.png)
 
-    Prediction Results: After processing, the tool provides a graphical representation of the predicted epitopes. This visual output makes it easy to identify the regions of interest within the sequence.
 
-    CSV Export: The results can also be exported in a structured format, like a CSV file, for further analysis. This image shows a snippet of the data that can be downloaded.
+Prediction Results: After processing, the tool provides a graphical representation of the predicted epitopes. This visual output makes it easy to identify the regions of interest within the sequence.
+![Epitope Predictor results](images/epitope_results.png)
+
+CSV Export: The results can also be exported in a structured format, like a CSV file, for further analysis. This image shows a snippet of the data that can be downloaded.
+![Epitope Predictor csv](images/epitope_csv.png)
+
 
 ## 💻 Local Usage (not recommended)
 
