@@ -1,6 +1,3 @@
-# epitope-predictor-mirror
-
-
 # Epitope Predictor Mirror
 
 <p align="center">
@@ -30,7 +27,17 @@ All the main components of the project are available on the Hugging Face platfor
 - **Adapter Model**: The fine-tuned model (`adapter-esm2-150M`) is hosted on the Hugging Face Hub, where it can be downloaded and used in your own projects:
   - [**sergiolitwiniuk/adapter-esm2-150M**](https://huggingface.co/sergiolitwiniuk/adapter-esm2-150M)
 
-## 💻 Local Usage
+🧪 Sample Results
+
+Here are some screenshots of the deployed Epitope Predictor tool to demonstrate its functionality.
+
+    Main Interface: This image shows the user interface of the Hugging Face Space where you can input a protein sequence to be analyzed.
+
+    Prediction Results: After processing, the tool provides a graphical representation of the predicted epitopes. This visual output makes it easy to identify the regions of interest within the sequence.
+
+    CSV Export: The results can also be exported in a structured format, like a CSV file, for further analysis. This image shows a snippet of the data that can be downloaded.
+
+## 💻 Local Usage (not recommended)
 
 To use the model locally, clone this repository and ensure you have the necessary dependencies.
 
@@ -41,15 +48,8 @@ git clone [https://github.com/your_username/epitope-predictor-mirror.git](https:
 cd epitope-predictor-mirror
 ````
 
-### 2\. (Optional) Install Dependencies
 
-If the project has a `requirements.txt` file, you can install the dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3\. Load the Model
+### 2\. Load the Model
 
 You can load the model and adapter in Python using the Hugging Face `transformers` library.
 
