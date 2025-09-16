@@ -13,7 +13,7 @@
 
 ## 🧐 About this Project
 
-This repository serves as a **"mirror"** (replica) of the **Epitope Predictor** project, a biological language model fine-tuned for epitope prediction. The model uses an `Esm2-150M` adapter to identify amino acid sequences likely to form an epitope—the part of a molecule recognized by the immune system.
+This repository serves as a **"mirror"** (replica) of the **Epitope Predictor** project, a biological language model I fine-tuned for epitope prediction. The model uses an `Esm2-150M` adapter to identify amino acid sequences likely to form an epitope—the part of a molecule recognized by the immune system.
 
 The goal of this repository is to provide a backup and an alternative access point to the model and its associated scripts, ensuring the project is accessible and easy to replicate.
 
