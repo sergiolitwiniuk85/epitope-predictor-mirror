@@ -1,0 +1,24 @@
+EPIPREDICT - PREDICTION SUMMARY
+========================================
+Sequence length: 203 residues
+Prediction threshold: 0.8
+Average probability: 0.7347
+Max probability: 0.9309
+Predicted epitopes: 73 (36.0%)
+
+PREDICTED EPITOPE REGIONS:
+-------------------------
+Region: 1-5 (Length: 5, Avg Prob: 0.837)
+Sequence: NYVLW
+
+Region: 66-71 (Length: 6, Avg Prob: 0.836)
+Sequence: SECPNE
+
+Region: 76-86 (Length: 11, Avg Prob: 0.878)
+Sequence: NSFEVEDYGFG
+
+Region: 104-139 (Length: 36, Avg Prob: 0.858)
+Sequence: CDHRLMSAAIKDQKAVHADMGYWIESSKNQTWQIER
+
+Region: 177-191 (Length: 15, Avg Prob: 0.883)
+Sequence: SQHNYRQGYATQTVG
